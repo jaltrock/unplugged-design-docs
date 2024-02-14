@@ -181,7 +181,7 @@ aside {
   justify-content: center;
 }
 
-features h2 {
+.features h2 {
   margin-bottom: 60px;
 }
 
@@ -209,17 +209,17 @@ features h2 {
 }
 
 .reviews h2 {
-
+  margin-bottom: 40px;
 }
 
 .reviews h3 {
   width: 55%;
+  margin: 20px 0;
 }
 
 /* ==========================================================================
    About Page
-   ==========================================================================
-   */
+   ========================================================================== */
 
 .mission {
   display: flex;
@@ -235,10 +235,9 @@ features h2 {
   margin: 0;
 }
 
-   /* ==========================================================================
+/* ==========================================================================
    FAQ Page
-   ==========================================================================
-   */
+   ========================================================================== */
 
 .faq {
   display: flex;
@@ -254,14 +253,12 @@ features h2 {
 }
 
 .faq h2 {
-  margin: 40px;
+  margin-bottom: 40px;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
-
-
 
 /* ==========================================================================
    Helper classes
@@ -351,15 +348,34 @@ features h2 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  /* General styles */
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* Header */
+  header {
+
+  }
+
+  header .content-wrapper {
+
+  }
+
+  header nav {
+
+  }
+
+
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
 }
 
 /* ==========================================================================
