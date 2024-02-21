@@ -97,6 +97,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: e2e3ed;
   text-align: left;
+  background-color: #202322;
 }
  
 ul, 
@@ -115,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
  
 h3, 
@@ -149,10 +151,10 @@ address {
 
 /* -------------- Base Header - Footer Styles ------------- */
 header {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -192,11 +194,11 @@ header nav ul li {
 }
 
 footer {
+  background-color: #202322;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #202322;
 }
 
 footer p {
@@ -218,9 +220,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -303,8 +313,12 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -377,11 +391,11 @@ input[type=button] {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  margin: 50px 0 0 0;
 }
 
 .faq h2 {
@@ -562,6 +576,10 @@ input[type=button] {
     margin-bottom: 20px;
   }
 
+  .features .features-items {
+    align-items: flex-start;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -574,8 +592,7 @@ input[type=button] {
   }
 
   .features i {
-    font-size: 3.75em;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   /* Reviews */
@@ -607,7 +624,6 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
   }
 
   footer .contact {
@@ -621,6 +637,11 @@ input[type=button] {
 
   footer p {
     line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -723,7 +744,7 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 30%;
   }
 
   .form-description p {
@@ -776,6 +797,7 @@ input[type=button] {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq h4,
